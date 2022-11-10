@@ -1,8 +1,13 @@
+import { ThemeProvider } from "@material-ui/core/styles";
+import Header from "./ui/Header";
+import theme from "./ui/Theme";
+
 function App() {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Header/>
+      Hello!
+    </ThemeProvider>
   );
 }
 
